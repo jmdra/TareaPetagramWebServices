@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.whiwol.petagram.Contacto">
+
+    <include android:id="@+id/miActionBar"
+        layout="@layout/actionbar"> </include>
+
+    <android.support.design.widget.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/tilPara">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/tietPara"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/correo_to"
+            android:textStyle="bold"
+            android:inputType="textEmailAddress"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tilAsunto">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/tietAsunto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/correo_subject"
+            android:textStyle="bold"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tilMensaje">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/tietMensaje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/correo_msgtext"
+            android:textStyle="bold"
+            android:inputType="textPostalAddress"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/correo_send"
+        android:theme="@style/MiBotonRaised"
+        android:onClick="mandarCorreo" />
+
+</LinearLayout>

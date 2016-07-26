@@ -1,0 +1,65 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".vista.fragments.PerfilPet"
+    android:background="@color/colorFondo2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/cvImagenPerfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="@dimen/card_esquinas"
+            card_view:cardBackgroundColor="@color/colorFondo2">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/left">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/civFotoPerfil"
+                android:layout_width="@dimen/fotitos_cardview2"
+                android:layout_height="@dimen/fotitos_cardview2"
+                android:src="@drawable/hunter"
+                app:civ_border_color="@color/colorPrimary"
+                app:civ_border_width="@dimen/card_esquinas"
+                app:civ_shadow="true"
+                app:civ_shadow_radius="10"
+                app:civ_shadow_color="@color/colorAccent"
+                android:layout_gravity="center_horizontal|top"
+                android:scaleType="centerCrop"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HUNTER"
+                    android:id="@+id/tvNombrePerfil"
+                    android:layout_below="@+id/civFotoPerfil"
+                    android:layout_centerHorizontal="true"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/nombre_cardview" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvFotosPerfil"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:layout_below="@id/cvImagenPerfil"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.whiwol.petagram.Contacto">
+
+    <include android:id="@+id/miActionBar"
+        layout="@layout/actionbar"> </include>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="@dimen/titulo_cuenta"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tilCuenta">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/tietCuenta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/account_ingresa"
+            android:textStyle="bold"
+            android:inputType="text"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnEnviar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/account_guardar"
+        android:theme="@style/MiBotonRaised"/>
+
+</LinearLayout>

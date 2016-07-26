@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:id="@+id/cvContacto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/card_vertical"
+    card_view:cardCornerRadius="@dimen/card_esquinas"
+    android:background="@color/colorFondo2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/left"
+        android:background="@color/colorFondo2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/LinearEncabezado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/civFotoPerfil"
+                    android:layout_width="@dimen/fotitos_circuloTL"
+                    android:layout_height="@dimen/fotitos_circuloTL"
+                    android:src="@drawable/hunter"
+                    app:civ_border_color="@color/colorPrimary"
+                    app:civ_border_width="@dimen/card_esquinas"
+                    app:civ_shadow="true"
+                    app:civ_shadow_radius="10"
+                    app:civ_shadow_color="@color/colorAccent"
+                    android:scaleType="centerCrop"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:id="@+id/tvNombreCV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pnombre"
+                    android:textSize="@dimen/nombre_recentmedia"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="@dimen/left"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imgFoto"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:src="@drawable/charmander"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@id/LinearEncabezado"/>
+
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/left"
+                android:id="@+id/linearLayout">
+
+                <ImageButton
+                    android:id="@+id/btnLike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/hueso"/>
+
+                <TextView
+                    android:id="@+id/tvMeGusta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pFeed"
+                    android:textSize="@dimen/nombre_cardview"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="@dimen/left"
+                    android:layout_gravity="center"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/linearLayout"
+                android:layout_toEndOf="@+id/linearLayout"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:id="@+id/tvLikesCV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/plikes"
+                    android:textSize="@dimen/nombre_cardview"
+                    android:layout_marginLeft="@dimen/left2"
+                    android:layout_gravity="center"
+                    android:textStyle="italic" />
+
+                <ImageView
+                    android:id="@+id/imgLike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/dog_bowl_96"
+                    android:layout_marginLeft="@dimen/left"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

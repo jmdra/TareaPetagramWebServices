@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Petagram</string>
+    <string name="texto_titulo">Hello World!!!</string>
+    <string name="texto_boton_click">Click</string>
+    <string name="mensaje">Favorito :)</string>
+    <string name="texto_Accion">Acción</string>
+    <string name="titulo_tarjeta">Android 5.0</string>
+    <string name="descripcion_tarjeta">Esta es la versión en la que se Incluyó Material Design Android Lollipop</string>
+    <string name="segundo_activity">Like</string>
+    <string name="nombre">Charmander</string>
+    <string name="likes">10</string>
+    <string name="pnombre">nombre</string>
+    <string name="pFeed">Feed Me!</string>
+    <string name="plikes">likes</string>
+    <string name="favs">Mis 5 Favoritos</string>
+    <string name="contacto_toolbar">Contacto</string>
+    <string name="about_toolbar">Acerca de</string>
+    <string name="account_toolbar">Configurar Cuenta</string>
+    <string name="correo_to">Ingresa tu Correo...</string>
+    <string name="correo_subject">Ingresa Tu Nombre...</string>
+    <string name="correo_msgtext">Ingresa Tu Comentario...</string>
+    <string name="account_ingresa">Escribe tu Usuario</string>
+    <string name="account_guardar">Guardar Cuenta</string>
+    <string name="correo_send">Enviar</string>
+    <string name="correo_title">Contactanos</string>
+    <string name="account_title">Cuenta</string>
+    <string name="about_title">About</string>
+    <string name="about_developer">Jose Mahonri Del Rincon A.</string>
+    <string name="about_info">Desarrollador Freelance, Co-fundador de WHIWOL.</string>
+    <string name="about_info2">Visita mi pagina: whiwol.com</string>
+    <string name="about_info3">Correo: developer@whiwol.com</string>
+    <string name="account_saved">La cuenta se Guardo Correctamente</string>
+    <string name="account_savedreturn">Ve a Perfil para Ver Cambios</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

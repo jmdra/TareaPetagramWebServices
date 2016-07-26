@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvContacto"
+    android:layout_width="@dimen/fotitos_cardview2"
+    android:layout_height="@dimen/fotitos_cardview3"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    card_view:cardCornerRadius="@dimen/card_esquinas"
+    android:background="@color/colorFondo2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorFondo2">
+
+        <ImageView
+            android:id="@+id/imgFotoPerfil"
+            android:layout_width="@dimen/fotitos_cardview"
+            android:layout_height="@dimen/fotitos_cardview"
+            android:src="@drawable/charmander"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="5dp" />
+
+        <LinearLayout
+            android:layout_width="@dimen/fotitos_cardview2"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="@dimen/left3">
+
+
+            <TextView
+                android:id="@+id/tvLikesCVPerfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/plikes"
+                android:textSize="@dimen/nombre_cardview"
+                android:textStyle="italic"
+                android:layout_marginLeft="@dimen/left"
+                android:layout_gravity="center|center_horizontal"/>
+
+                <ImageView
+                    android:id="@+id/imgLike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/dog_bone_96"
+                    android:layout_marginLeft="@dimen/left"
+                    android:layout_gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- Contacto, should always be in the overflow -->
+    <item android:id="@+id/action_contacto"
+        android:title="@string/contacto_toolbar"
+        app:showAsAction="never" />
+    <!-- Acerca de, should always be in the overflow -->
+    <item android:id="@+id/action_about"
+        android:title="@string/about_toolbar"
+        app:showAsAction="never" />
+    <!-- Cuenta, should always be in the overflow -->
+    <item android:id="@+id/action_account"
+        android:title="@string/account_toolbar"
+        app:showAsAction="never" />
+</menu>
